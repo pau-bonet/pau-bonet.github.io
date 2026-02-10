@@ -1,4 +1,4 @@
-# Portfolio & CV - Pau Bonet
+# CV - Pau Bonet
 
 Sitio web de CV personal que muestra mi experiencia en ciberseguridad y administración de sistemas.
 
