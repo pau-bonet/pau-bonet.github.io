@@ -80,7 +80,7 @@ section:last-child {
     border-bottom: none;
 }
 
-/* Títulos de sección - MANTIENE el símbolo // */
+/* Títulos de sección - SOLO mantiene / */
 h2 {
     font-family: 'Consolas', 'Monaco', 'Courier New', monospace;
     color: var(--primary-color);
@@ -90,14 +90,13 @@ h2 {
     letter-spacing: 0.5px;
     text-transform: uppercase;
     position: relative;
-    padding-left: 15px;
+    padding-left: 0;
 }
 
 h2::before {
-    content: "//";
-    position: absolute;
-    left: 0;
+    content: "/";
     color: var(--secondary-color);
+    margin-right: 5px;
 }
 
 /* Subtítulos - SIN símbolos decorativos */
