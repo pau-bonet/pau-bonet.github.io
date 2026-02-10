@@ -33,6 +33,4 @@ document.querySelectorAll('section').forEach(section => {
     observer.observe(section);
 });
 
-// Mensaje en consola (toque de ciberseguridad)
-console.log('%c🔒 Bienvenido a mi CV', 'color: #3498db; font-size: 20px; font-weight: bold;');
-console.log('%cSi estás viendo esto, ¡probablemente te gusta la tecnología tanto como a mí!', 'color: #2c3e50; font-size: 14px;');
+console.log('%cWelcome to my CV', 'color: #3498db; font-size: 20px; font-weight: bold;');
