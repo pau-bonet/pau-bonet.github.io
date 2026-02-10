@@ -260,3 +260,95 @@ section:nth-child(4) { animation-delay: 0.4s; }
         opacity: 1;
     }
 }
+
+/* ESTILOS PARA IMPRESIÓN Y PDF */
+
+@media print {
+    /* Eliminar animaciones */
+    *, *::before, *::after {
+        animation: none !important;
+        transition: none !important;
+    }
+    
+    section {
+        opacity: 1 !important;
+        page-break-inside: avoid;
+    }
+    
+    /* Mejorar contraste para impresión */
+    body {
+        background-color: white !important;
+        color: #000000 !important;
+    }
+    
+    main {
+        background-color: white !important;
+    }
+    
+    /* Header optimizado para PDF */
+    header {
+        background-color: #1a1a1a !important;
+        -webkit-print-color-adjust: exact !important;
+        print-color-adjust: exact !important;
+    }
+    
+    /* Footer optimizado */
+    footer {
+        background-color: #1a1a1a !important;
+        -webkit-print-color-adjust: exact !important;
+        print-color-adjust: exact !important;
+    }
+    
+    /* Forzar colores en tarjetas */
+    .skill-card,
+    .education-item,
+    .language-item,
+    .project,
+    #contact p {
+        border-left-color: #2d5016 !important;
+        -webkit-print-color-adjust: exact !important;
+        print-color-adjust: exact !important;
+    }
+    
+    /* Evitar saltos de página en medio de secciones */
+    h2 {
+        page-break-after: avoid;
+    }
+    
+    .skill-card,
+    .education-item,
+    .language-item {
+        page-break-inside: avoid;
+    }
+    
+    /* Optimizar grid para impresión */
+    .skills-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+    
+    .languages-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+    
+    /* Enlaces visibles en PDF */
+    a[href]:after {
+        content: none; /* No mostrar URLs largas */
+    }
+    
+    /* Mejorar legibilidad */
+    body {
+        font-size: 11pt;
+        line-height: 1.5;
+    }
+    
+    h1 { font-size: 24pt; }
+    h2 { font-size: 16pt; }
+    h3 { font-size: 12pt; }
+    
+    /* Eliminar borders innecesarios */
+    section {
+        border-bottom: 1px solid #e0e0e0 !important;
+    }
+}
