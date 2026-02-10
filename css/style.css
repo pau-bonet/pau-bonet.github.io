@@ -231,3 +231,52 @@ section:nth-child(4) { animation-delay: 0.4s; }
         opacity: 1;
     }
 }
+
+/* Education section */
+.education-item {
+    background: var(--card-bg);
+    padding: 20px;
+    margin-bottom: 20px;
+    border-left: 4px solid var(--secondary-color);
+    border: 1px solid var(--border-color);
+    border-left: 4px solid var(--secondary-color);
+}
+
+.education-item h3 {
+    color: var(--secondary-color);
+    margin-bottom: 5px;
+    font-size: 1.1em;
+}
+
+.education-period {
+    color: #888888;
+    font-size: 0.9em;
+    font-style: italic;
+    margin-bottom: 10px;
+}
+
+/* Languages section */
+.languages-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.language-item {
+    background: var(--card-bg);
+    padding: 20px;
+    border: 1px solid var(--border-color);
+    border-left: 3px solid var(--secondary-color);
+    text-align: center;
+}
+
+.language-item h3 {
+    color: var(--secondary-color);
+    margin-bottom: 8px;
+}
+
+.language-item p {
+    color: #666666;
+    font-size: 0.9em;
+}
