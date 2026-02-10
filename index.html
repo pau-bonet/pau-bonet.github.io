@@ -4,48 +4,69 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pau Bonet - CV</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            max-width: 800px;
-            margin: 50px auto;
-            padding: 20px;
-            background-color: #f4f4f4;
-        }
-        .container {
-            background-color: white;
-            padding: 40px;
-            border-radius: 8px;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-        }
-        h1 {
-            color: #2c3e50;
-            border-bottom: 3px solid #3498db;
-            padding-bottom: 10px;
-        }
-        h2 {
-            color: #34495e;
-            margin-top: 30px;
-        }
-        p {
-            color: #555;
-            line-height: 1.6;
-        }
-    </style>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <div class="container">
-        <h1>Pau Bonet</h1>
-        <p>Estudiante de ASIR - Ciberseguridad</p>
-        
-        <h2>Sobre mí</h2>
-        <p>Estudiante de Administración de Sistemas Informáticos en Red con especialización en ciberseguridad.</p>
-        
-        <h2>Skills</h2>
-        <p>Linux, Windows Server, Redes, Seguridad Informática, Python, Bash</p>
-        
-        <h2>Contacto</h2>
-        <p>GitHub: <a href="https://github.com/pau-bonet">pau-bonet</a></p>
-    </div>
+    <header>
+        <div class="container">
+            <h1>Pau Bonet</h1>
+            <p class="subtitle">Estudiante de ASIR - Ciberseguridad</p>
+        </div>
+    </header>
+
+    <main class="container">
+        <section id="about">
+            <h2>Sobre mí</h2>
+            <p>Estudiante de Administración de Sistemas Informáticos en Red con especialización en ciberseguridad. Apasionado por la seguridad de la información y la administración de sistemas.</p>
+        </section>
+
+        <section id="skills">
+            <h2>Competencias Técnicas</h2>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <h3>Sistemas Operativos</h3>
+                    <p>Linux, Windows Server</p>
+                </div>
+                <div class="skill-card">
+                    <h3>Redes</h3>
+                    <p>TCP/IP, VLANs, Routing</p>
+                </div>
+                <div class="skill-card">
+                    <h3>Seguridad</h3>
+                    <p>Firewall, IDS/IPS, Pentesting</p>
+                </div>
+                <div class="skill-card">
+                    <h3>Scripting</h3>
+                    <p>Python, Bash, PowerShell</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects">
+            <h2>Proyectos</h2>
+            <div class="project">
+                <h3>Proyecto 1</h3>
+                <p>Descripción de tu proyecto del ciclo formativo.</p>
+            </div>
+            <div class="project">
+                <h3>Proyecto 2</h3>
+                <p>Descripción de otro proyecto relevante.</p>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2>Contacto</h2>
+            <p>GitHub: <a href="https://github.com/pau-bonet" target="_blank">pau-bonet</a></p>
+            <p>Email: <a href="mailto:tu-email@ejemplo.com">tu-email@ejemplo.com</a></p>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Pau Bonet | Built with HTML, CSS & JS</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
 </body>
 </html>
