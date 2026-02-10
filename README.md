@@ -4,7 +4,7 @@ Sitio web de CV personal que muestra mi experiencia en ciberseguridad y administ
 
 **Sitio en vivo:** [pau-bonet.github.io](https://pau-bonet.github.io)
 
-## 👤 Contacto
+## Contacto
 
 - **GitHub:** [@pau-bonet](https://github.com/pau-bonet)
 - **Sitio web:** [pau-bonet.github.io](https://pau-bonet.github.io)
