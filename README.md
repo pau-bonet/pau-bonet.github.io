@@ -4,7 +4,7 @@ Personal CV website showcasing my experience in cybersecurity and systems admini
 
 **Live Site:** [pau-bonet.github.io](https://pau-bonet.github.io)
 
-## 📋 About
+## About
 
 This is my professional portfolio and curriculum vitae, designed to showcase my technical skills, education, and experience in IT and cybersecurity. Built from scratch using modern web technologies with a focus on clean code and professional design.
 
