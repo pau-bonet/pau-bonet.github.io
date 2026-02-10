@@ -30,7 +30,7 @@ body {
     padding: 0 20px;
 }
 
-/* Header - MANTIENE los símbolos $ y > */
+/* Header */
 header {
     background-color: var(--primary-color);
     color: #f5f5f5;
@@ -54,7 +54,7 @@ header h1::before {
 .subtitle {
     font-family: 'Consolas', 'Monaco', 'Courier New', monospace;
     font-size: 1em;
-    opacity: 0.85;
+    color: var(--accent-color);
     font-weight: 400;
     letter-spacing: 0.5px;
 }
@@ -80,7 +80,7 @@ section:last-child {
     border-bottom: none;
 }
 
-/* Títulos de sección - SOLO mantiene / */
+/* Títulos de sección */
 h2 {
     font-family: 'Consolas', 'Monaco', 'Courier New', monospace;
     color: var(--primary-color);
@@ -99,7 +99,7 @@ h2::before {
     margin-right: 5px;
 }
 
-/* Subtítulos - SIN símbolos decorativos */
+/* Subtítulos */
 h3 {
     color: var(--text-color);
     margin-bottom: 10px;
@@ -112,10 +112,10 @@ p {
     color: #555555;
 }
 
-/* Skills Grid */
+/* Skills Grid - 3 columnas */
 .skills-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-columns: repeat(3, 1fr);
     gap: 15px;
     margin-top: 20px;
 }
@@ -145,99 +145,11 @@ p {
     color: #666666;
 }
 
-/* Projects */
-.project {
-    background: var(--card-bg);
-    padding: 25px;
-    margin-bottom: 20px;
-    border: 1px solid var(--border-color);
-    border-left: 4px solid var(--secondary-color);
-}
-
-.project h3 {
-    color: var(--secondary-color);
-    margin-bottom: 12px;
-}
-
-.project p {
-    font-size: 0.95em;
-    line-height: 1.6;
-}
-
-/* Contact section */
-#contact p {
-    background-color: #fafafa;
-    padding: 12px 15px;
-    border-left: 3px solid var(--secondary-color);
-    margin-bottom: 10px;
-}
-
-/* Links */
-a {
-    color: var(--secondary-color);
-    text-decoration: none;
-    border-bottom: 1px solid transparent;
-    transition: all 0.2s ease;
-    font-weight: 500;
-}
-
-a:hover {
-    color: var(--accent-color);
-    border-bottom-color: var(--accent-color);
-}
-
-/* Footer */
-footer {
-    background-color: var(--primary-color);
-    color: #cccccc;
-    text-align: center;
-    padding: 25px 0;
-    font-size: 0.9em;
-    border-top: 3px solid var(--secondary-color);
-}
-
-/* Responsive */
-@media (max-width: 768px) {
-    header h1 {
-        font-size: 1.8em;
-    }
-    
-    h2 {
-        font-size: 1.3em;
-    }
-    
-    .skills-grid {
-        grid-template-columns: 1fr;
-    }
-
-    main {
-        padding: 40px 15px;
-    }
-}
-
-/* Animaciones sutiles */
-section {
-    opacity: 0;
-    animation: fadeIn 0.6s ease-in forwards;
-}
-
-section:nth-child(1) { animation-delay: 0.1s; }
-section:nth-child(2) { animation-delay: 0.2s; }
-section:nth-child(3) { animation-delay: 0.3s; }
-section:nth-child(4) { animation-delay: 0.4s; }
-
-@keyframes fadeIn {
-    to {
-        opacity: 1;
-    }
-}
-
 /* Education section */
 .education-item {
     background: var(--card-bg);
     padding: 20px;
     margin-bottom: 20px;
-    border-left: 4px solid var(--secondary-color);
     border: 1px solid var(--border-color);
     border-left: 4px solid var(--secondary-color);
 }
@@ -279,4 +191,72 @@ section:nth-child(4) { animation-delay: 0.4s; }
 .language-item p {
     color: #666666;
     font-size: 0.9em;
+}
+
+/* Contact section */
+#contact p {
+    background-color: #fafafa;
+    padding: 12px 15px;
+    border-left: 3px solid var(--secondary-color);
+    margin-bottom: 10px;
+}
+
+/* Links */
+a {
+    color: var(--secondary-color);
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+    transition: all 0.2s ease;
+    font-weight: 500;
+}
+
+a:hover {
+    color: var(--accent-color);
+    border-bottom-color: var(--accent-color);
+}
+
+/* Footer - texto verde */
+footer {
+    background-color: var(--primary-color);
+    color: var(--accent-color);
+    text-align: center;
+    padding: 25px 0;
+    font-size: 0.9em;
+    border-top: 3px solid var(--secondary-color);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 1.8em;
+    }
+    
+    h2 {
+        font-size: 1.3em;
+    }
+    
+    .skills-grid {
+        grid-template-columns: 1fr;
+    }
+
+    main {
+        padding: 40px 15px;
+    }
+}
+
+/* Animaciones */
+section {
+    opacity: 0;
+    animation: fadeIn 0.6s ease-in forwards;
+}
+
+section:nth-child(1) { animation-delay: 0.1s; }
+section:nth-child(2) { animation-delay: 0.2s; }
+section:nth-child(3) { animation-delay: 0.3s; }
+section:nth-child(4) { animation-delay: 0.4s; }
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
 }
