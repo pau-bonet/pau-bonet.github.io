@@ -2,20 +2,20 @@
 
 Personal CV website showcasing my experience in cybersecurity and systems administration.
 
-🔗 **Live Site:** [pau-bonet.github.io](https://pau-bonet.github.io)
+**Live Site:** [pau-bonet.github.io](https://pau-bonet.github.io)
 
 ## 📋 About
 
 This is my professional portfolio and curriculum vitae, designed to showcase my technical skills, education, and experience in IT and cybersecurity. Built from scratch using modern web technologies with a focus on clean code and professional design.
 
-## 🛠️ Technologies Used
+## Technologies Used
 
 - **HTML5** - Semantic structure
 - **CSS3** - Custom styling with CSS variables
 - **JavaScript** - Interactive elements and animations
 - **GitHub Pages** - Free hosting with automatic HTTPS
 
-## 🎨 Design Philosophy
+## Design Philosophy
 
 The design follows a "Tech Monochrome" aesthetic, combining:
 - Professional typography (monospace for headers, sans-serif for content)
@@ -24,7 +24,7 @@ The design follows a "Tech Monochrome" aesthetic, combining:
 - Responsive design for all devices
 - Accessibility-first approach
 
-## 📁 Project Structure
+## Project Structure
 ```
 pau-bonet.github.io/
 ├── index.html          # Main HTML file
@@ -35,7 +35,7 @@ pau-bonet.github.io/
 └── README.md           # This file
 ```
 
-## ✨ Features
+## Features
 
 - **Responsive Design** - Works on desktop, tablet, and mobile
 - **Smooth Animations** - Subtle fade-in effects for better UX
@@ -43,7 +43,7 @@ pau-bonet.github.io/
 - **Interactive Elements** - Hover effects and smooth scrolling
 - **SEO Optimized** - Proper meta tags and semantic HTML
 
-## 📝 Sections
+## Sections
 
 - **About Me** - Introduction and professional summary
 - **Education** - Academic background and certifications
@@ -51,18 +51,14 @@ pau-bonet.github.io/
 - **Languages** - Spoken languages with proficiency levels
 - **Contact** - Ways to get in touch
 
-## 🔒 Security
+## Security
 
 This site implements basic security best practices:
 - HTTPS enabled by default (GitHub Pages)
 - No external dependencies or CDN vulnerabilities
 - Clean, validated code with no inline scripts
 
-## 📄 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-## 👤 Contact
+## Contact
 
 - **GitHub:** [@pau-bonet](https://github.com/pau-bonet)
 - **Website:** [pau-bonet.github.io](https://pau-bonet.github.io)
